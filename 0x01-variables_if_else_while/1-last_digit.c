@@ -6,7 +6,7 @@
  * main - Entry Point
  *
  * Return: Always 0 (success)
- */i
+ */i;
 int main(void)
 {
 int n;
