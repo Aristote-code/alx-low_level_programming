@@ -9,7 +9,7 @@
  */
 int is_digit(char c)
 {
-    return c >= '0' && c <= '9';
+return (c >= '0' && c <= '9');
 }
 
 /**
@@ -21,24 +21,24 @@ int is_digit(char c)
  */
 int main(int argc, char *argv[])
 {
-    int sum = 0;
-    int i, j;
+int sum = 0;
+int i, j;
 
-    for (i = 1; i < argc; i++)
-    {
-        for (j = 0; argv[i][j] != '\0'; j++)
-        {
-            if (!is_digit(argv[i][j]) && argv[i][j] != '-')
-            {
-                printf("Error\n");
-                return 1;
-            }
-        }
+for (i = 1; i < argc; i++)
+{
+for (j = 0; argv[i][j] != '\0'; j++)
+{
+if (!is_digit(argv[i][j]) && argv[i][j] != '-')
+{
+printf("Error\n");
+return (1);
+}
+}
 
-        sum += atoi(argv[i]);
-    }
+sum += atoi(argv[i]);
+}
 
-    printf("%d\n", sum);
-    return 0;
+printf("%d\n", sum);
+return (0);
 }
 
