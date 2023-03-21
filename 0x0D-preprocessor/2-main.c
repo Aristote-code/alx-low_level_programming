@@ -7,8 +7,8 @@
  * Return: Always 0 (Success)
  */
 
-int main()
+int main(void)
 {
-    printf("%s\n", FILENAME);
-    return (0);
+printf("%s\n", FILENAME);
+return (0);
 }
