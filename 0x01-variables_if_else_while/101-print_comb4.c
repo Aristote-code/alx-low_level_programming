@@ -15,7 +15,7 @@ for (number2 = 0; number2 < 9; number2++)
 {
 for (number3 = 0; number3 < 10; number3++)
 {
-if (number1 < number2 && number2 < number3)
+if (number1 < number2 || number2 < number3)
 {
 putchar((number1 % 10) + '0');
 putchar((number2 % 10) + '0');
