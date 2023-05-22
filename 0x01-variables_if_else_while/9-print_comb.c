@@ -1,24 +1,21 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
- * main - Prints all possible combinations of single-digit numbers.
+ * main - Prints all possible combinations of two two-digit numbers.
  *
  * Return: Always 0.
  */
+
 int main(void)
 {
-int num;
+    int number;
 
-for (num = 0; num <= 9; num++)
-{
-putchar((num % 10) + '0');
-if (num == 9)
-continue;
-putchar(',');
-putchar(' ');
-}
-
-putchar('\n');
-
-return (0);
+    for (number = 0; number < 10)
+    {
+        putchar((number % 10) + '0');
+        putchar(',');
+        putchar(' ');
+    }
+    putchar('\n');
+    return (0);
 }
