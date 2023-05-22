@@ -1,29 +1,20 @@
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
+#include <stdio.h>
 
-/* betty style doc for function main goes there */
+/**
+ * main - Prints the alphabet in lowercase.
+ *
+ * Return: Always 0.
+ */
+
 int main(void)
 {
-	int n;
-    int x;
+    char letter;
+    for (letter = 'a'; letter <= 'z' ; letter++)
+    {
+        putchar(letter);
+    }
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	
-    x = n % 10;
+    putchar('\n');
 
-    if (x > 5)
-    {
-        printf("Last digit of %d is %d and is greater than 5\n", n, x);
-    }
-    else if (x == 0)
-    {
-        printf("Last digit of %d is %d and is 0\n", n, x);
-    }
-    else if (n > 6 & n != 0)
-    {
-        printf("Last digit of %d is %d and is less than 6 and not 0\n", n, x);
-    }
-	return (0);
+    return (0);
 }
