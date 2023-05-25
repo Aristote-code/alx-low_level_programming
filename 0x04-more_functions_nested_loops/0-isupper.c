@@ -1,3 +1,8 @@
+/*
+ * File: 0-isupper.c
+ * Auth: Gahima Aristote
+ */
+
 #include "main.h"
 
 /**
