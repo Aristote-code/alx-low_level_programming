@@ -8,7 +8,6 @@
 
 int main(void)
 {
-char letter;
 
 if('c' > 'a' && 'c' < 'z')
 {
