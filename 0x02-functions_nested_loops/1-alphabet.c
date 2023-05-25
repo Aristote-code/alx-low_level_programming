@@ -1,11 +1,13 @@
+/*
+ * File: 1-alphabet.c
+ * Auth: Gahima Aristote
+ */
+
 #include "main.h"
 
 /**
- * main - a program that prints the alphabet in lowercase.
- *
- * Return: Always 0 (Success)
+ * print_alphabet - prints the alphabet in lowercase, followed by a new line.
  */
-
 void print_alphabet(void)
 {
 	char letter;
