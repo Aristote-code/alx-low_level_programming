@@ -1,6 +1,6 @@
 /*
  * File: 1-alphabet.c
- * Auth: Gahima Aristote
+ * Arthur: Gahima Aristote
  */
 
 #include "main.h"
