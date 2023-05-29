@@ -12,15 +12,17 @@
 void print_rev(char *s)
 {
 	int length = 0;
+    int i;
+    char temp;
 
 	while (s[length] != '\0')
 	{
 		length++;
 	}
 
-	for (int i = length - 1; i >= length / 2; i--)
+	for (i = length - 1; i >= length / 2; i--)
 	{
-		char temp = s[i];
+		temp = s[i];
 		s[i] = s[length - 1 - i];
 		s[length - 1 - i] = temp;
 	}
