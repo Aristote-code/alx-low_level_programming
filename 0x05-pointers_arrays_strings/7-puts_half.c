@@ -12,15 +12,15 @@
 void puts_half(char *str)
 {
     int index = 0;
-	int len = 0;
+    int len = 0;
 
-	while (str[index] != '\0')
-	{
-		len++;
+    while (str[index] != '\0')
+    {
+        len++;
         index++;
-	}
+    }
 
-    for (index = ((len - 1)/2); index < len; index++)
+    for (index = (len - 1) / 2; index < len; index++)
     {
         _putchar(str[index]);
     }
