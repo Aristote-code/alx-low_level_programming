@@ -1,6 +1,6 @@
 /*
  * File: 4-pow_recursion.c
- * Auth: Gahima Aristote 
+ * Auth: Gahima Aristote
  */
 
 #include "main.h"
@@ -26,7 +26,7 @@ return (1);
 
 else
 {
-sln = sln * _pow_recursion(x, y - 1);
+sln = sln *_pow_recursion(x, y - 1);
 return (sln);
 }
 }
