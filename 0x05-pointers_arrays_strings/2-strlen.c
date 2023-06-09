@@ -1,16 +1,25 @@
+/*
+ * File: 2-strlen.c
+ * Auth: Gahima Aristote
+ */
+
 #include "main.h"
+
 /**
- * _strlen - return the length of a string
- * Owned By Bwave
- * @s: char to check
- * Description: this will return the length of a string
- * Return: 0 is success
+ * _strlen - Returns the length of a string.
+ * @s: The string to get the length of.
+ *
+ * Return: The length of the string.
  */
 int _strlen(char *s)
 {
-int a = 0;
+int count = 0;
 
-for (; *s++;)
-a++;
-return (a);
+while (*s != '\0')
+{
+count++;
+s++;
+}
+
+return (count);
 }

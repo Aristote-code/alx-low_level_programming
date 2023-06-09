@@ -1,20 +1,32 @@
+/*
+ * File: 8-print_array.c
+ * Auth: Brennan D Baraban
+ */
+
 #include "main.h"
 #include <stdio.h>
+
 /**
- * print_array - prints n element of an array of integers
- * Owned by Bwave
- * @a: int to check
- * @n: int to check
- * Return: 0 is success
+ * print_array - Prints an inputted number of elements
+ *               of an array of integers.
+ * @a: The array of integers.
+ * @n: The number of elements to be printed.
  */
 void print_array(int *a, int n)
 {
-int x;
+int index;
 
-for (x = 0; x < n; x++)
-if (x != n - 1)
-printf("%d, ", a[x]);
+for (index = 0; index < n; index++)
+{
+if (index != (n - 1))
+{
+printf("%d, ", a[index]);
+}
+
 else
-printf("%d", a[x]);
+{
+printf("%d", a[index]);
+}
+}
 printf("\n");
 }

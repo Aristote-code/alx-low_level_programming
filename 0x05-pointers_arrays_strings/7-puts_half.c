@@ -1,23 +1,39 @@
+/*
+ * File: 7-puts_half.c
+ * Auth: Gahima Aristote
+ */
+
 #include "main.h"
+
 /**
- * puts_half - prints half of a string
- * @str: char to check
- *
- * Return: 0 is success
+ * puts_half - Prints half of a string.
+ * @str: The string to be printed.
  */
 void puts_half(char *str)
 {
-int string = 0, n;
+int index = 0;
+int len = 0;
+int n;
 
-while (str[string] != '\0')
-string++;
-if (string + 1 % 2 != '0')
-n = (string - 1) / 2;
+while (str[index] != '\0')
+{
+len++;
+index++;
+}
+
+if ((len % 2) == 0)
+{
+n = len / 2;
+}
 else
-n = (string / 2);
-n++;
+{
+n = (len + 1) / 2;
+}
 
-for (string = n; str[string] != '\0'; string++)
-_putchar(str[string]);
+for (index = n; index < len; index++)
+{
+_putchar(str[index]);
+}
+
 _putchar('\n');
 }

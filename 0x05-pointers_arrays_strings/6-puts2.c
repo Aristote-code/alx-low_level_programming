@@ -1,17 +1,28 @@
+/*
+ * File: 6-puts2.c
+ * Auth: Gahima Aristote
+ */
+
 #include "main.h"
+
 /**
- * puts2 - prints every other character of a string
- *
- * @str: char to check
- *
- * Return: 0 is success
+ * puts2 - Prints one char out of two of a string.
+ * @str: The string containing characters.
  */
 void puts2(char *str)
 {
-int string;
+	int i;
+	int len = 0;
 
-for (string = 0; str[string] != '\0'; string++)
-if (string % 2 == 0)
-_putchar(str[string]);
-_putchar('\n');
+	while (str[len] != '\0')
+	{
+		len++;
+	}
+
+	for (i = 0; i < len; i += 2)
+	{
+		_putchar(str[i]);
+	}
+
+	_putchar('\n');
 }
