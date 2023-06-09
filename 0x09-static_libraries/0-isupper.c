@@ -3,9 +3,9 @@
 /**
  * _isupper - uppercase letters
  * @c: char to check
- * 
+ *
  * Auth: Gahima Aristote
- * 
+ *
  * Return: 0 or 1
  */
 

@@ -1,6 +1,12 @@
+/*
+ * File: 0-strcat.c
+ * Auth: Gahima Aristote
+ */
+
 #include "main.h"
+
 /**
- * 
+ *
  * _strcat - concatenates two strings
  * @dest: input value
  * @src: input value
