@@ -1,34 +1,26 @@
-/*
- * File: 3-mul.c
- * Auth: Gahima Aristote
- */
-
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 
 /**
- * main - Prints the number of arguments passed to it.
- * @argc: The number of arguments supplied to the program.
- * @argv: An array of pointers to the arguments.
- *
- * Return: Always 0.
- */
-
-int main(int argc, char *argv[])
+* main - multiplies two numbers.
+* @argc: argument count
+* @argv: arguments
+*
+* Return: 0
+*/
+int main(int argc, char **argv)
 {
-int num1, num2, mul;
+int x, y;
 
-if (argc != 3)
+if (argc < 3)
 {
 printf("Error\n");
+return (1);
 }
 
-num1 = _atoi(argv[1]);
-num2 = _atoi(argv[2]);
-mul = num1 * num2;
+x = atoi(argv[1]);
+y = atoi(argv[2]);
+printf("%d\n", x * y);
 
-printf("%d", mul);
-
-return(0);
+return (0);
 }
