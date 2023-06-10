@@ -1,9 +1,19 @@
+/*
+ * File: 4-add.c
+ * Auth: Brennan D Baraban
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
- * main - Prints the product of two integer arguments.
- * @argc: The number of arguments supplied to the program.
+ * main - Prints the addition of positive numbers,
+ *        followed by a new line.
+ * @argc: The number of arguments passed to the program.
  * @argv: An array of pointers to the arguments.
  *
- * Return: Always 0.
+ * Return: If one of the numbers contains symbols that are non-digits - 1.
+ *         Otherwise - 0.
  */
 
 int main(int argc, char *argv[])
