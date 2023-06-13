@@ -48,7 +48,7 @@ for (index = 0; index <= len1; index++)
 concat_str[index] = s1[index];
 }
 
-for (conc_index = 0, index = len1; index < (len1 + len2); conc_index++, index++)
+for (conc_index = 0, index = len1; conc_index < len2; conc_index++, index++)
 {
 concat_str[index] = s2[conc_index];
 }
