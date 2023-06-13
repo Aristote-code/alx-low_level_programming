@@ -21,11 +21,10 @@ char *str_concat(char *s1, char *s2)
 int index, conc_index, len1 = 0, len2 = 0;
 char *concat_str;
 
-if (s1 == NULL) 
+if (s1 == NULL)
 {
 s1 = "";
 }
-
 if (s2 == NULL)
 {
 s2 = "";
@@ -52,13 +51,10 @@ for (index = 0; index <= len1; index++)
 {
 concat_str[index] = s1[index];
 }
-
 for (conc_index = 0, index = len1; conc_index < len2; conc_index++, index++)
 {
 concat_str[index] = s2[conc_index];
 }
-
 concat_str[index] = '\0';
-
 return (concat_str);
 }
