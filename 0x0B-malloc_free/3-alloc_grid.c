@@ -8,7 +8,7 @@
 
 /**
  * alloc_grid - Returns a pointer to a 2-dimensional array of
- *               integers with each element initalized to 0.
+ *               integers with each element initialized to 0.
  * @width: The width of the 2-dimensional array.
  * @height: The height of the 2-dimensional array.
  *
@@ -17,7 +17,7 @@
  */
 int **alloc_grid(int width, int height)
 {
-int j,i;
+int j, i;
 int **grid;
 if (width <= 0)
 {
@@ -49,5 +49,5 @@ for (j = 0; j < width; j++)
 grid[i][j] = 0;
 }
 }
-return(grid);
+return (grid);
 }
