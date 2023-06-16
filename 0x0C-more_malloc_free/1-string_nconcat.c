@@ -1,9 +1,9 @@
 /*
  * File: 1-string_nconcat.c
- * Auth: Gahima Aristote
+ * Auth: Brennan D Baraban
  */
 
-#include "main.h"
+#include "mainn.h"
 #include <stdlib.h>
 
 /**
@@ -18,29 +18,32 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-    int index, len = 0, len2 = 0;
-    char *concat;
-    if (s1 == NULL)
-        s1 = "";
-    if (s2 == NULL)
-        s2 = "";
+	char *concat;
+	unsigned int len = n, index;
 
-    while (s1[len] != '\0')
-        len++;
+	if (s1 == NULL)
+		s1 = "";
 
-    while (s2[len2] != '\0' && len2 < n)
-        len2++;
+	if (s2 == NULL)
+		s2 = "";
 
-    concat = malloc(sizeof(char) * (len + len2 + 1));
-    if (concat == NULL)
-        return (NULL);
+	for (index = 0; s1[index]; index++)
+		len++;
 
-    for (index = 0; index < len; index++)
-        concat[index] = s1[index];
+	concat = malloc(sizeof(char) * (len + 1));
 
-    for (index = 0; index < len2; index++)
-        concat[len + index] = s2[index];
+	if (concat == NULL)
+		return (NULL);
 
-    concat[len + len2] = '\0';
-    return (concat);
+	len = 0;
+
+	for (index = 0; s1[index]; index++)
+		concat[len++] = s1[index];
+
+	for (index = 0; s2[index] && index < n; index++)
+		concat[len++] = s2[index];
+
+	concat[len] = '\0';
+
+	return (concat);
 }
