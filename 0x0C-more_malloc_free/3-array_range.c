@@ -24,7 +24,7 @@ if (max < min)
 return (NULL);
 }
 size = (max - min) + 1;
-val = malloc(size * sizeof(int));
+val = malloc(size *sizeof(int));
 if (val == NULL)
 {
 return (NULL);
