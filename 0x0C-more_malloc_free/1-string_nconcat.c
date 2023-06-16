@@ -3,7 +3,7 @@
  * Auth: Brennan D Baraban
  */
 
-#include "mainn.h"
+#include "main.h"
 #include <stdlib.h>
 
 /**
